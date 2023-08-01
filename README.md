@@ -35,4 +35,40 @@ The logs are stored in the folder `/logs`, inside the project directory.
 
 Logs are stored in `md` files cause this format allows to create easy to read documents.
 
+**Note that if the logs folder not exists, the logs files cannot be created!**
+
+**The feature to create the folder automatically has to be added**
+
 ### Structure
+
+#### Files
+This section will include all the sensitive files that can be founded on a website such as sitemap.xml
+and robots.txt.
+
+#### Pages
+Each page founded in the website will be analyzed an the information will be reported in the log file
+as follows:
+
+##### Title | Url
+
+###### Metadata
+All the metadata of the current page
+
+###### Links
+List of all the links present on the page
+
+###### Forms and Inputs
+If page includes forms / inputs and information about these forms / inputs
+
+###### Cookies
+The cookies saved when you are on the page
+
+###### Contacts
+By contacts we mean emails, social link, ecc.
+All the information that regard the contacts found in the page
+
+###### Technologies Used
+All the technologies that can be detected, e.g. GSAP, ReactJS
+
+###### General Information
+Name of people (With the relative role if specified)
