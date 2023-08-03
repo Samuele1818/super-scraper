@@ -20,7 +20,6 @@ def get_page(session: HTMLSession, url: str):
     return r.html
 
 
-# FIXME: Some links included in the dict not exist
 def get_links(webpage: object, log: MarkDownFile | None, discovered_links: dict):
     """
     Get all links from the page.
@@ -42,8 +41,8 @@ def get_links(webpage: object, log: MarkDownFile | None, discovered_links: dict)
             if link is not None:
                 discovered_links[link] = "N"
 
-        # Log all links found in the page
-        log.append_end(f"- {link} \n")
+                # Log all links found in the page
+                log.append_end(f"- {link} \n")
 
     # Return a list with all the links contained in the webpage
     return links

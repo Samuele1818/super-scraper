@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 from mdutils.fileutils import MarkDownFile
 from requests_html import HTMLSession
 
@@ -6,7 +5,7 @@ from scrapers.spider import get_links, get_page
 from utils.utils import is_links_not_analyzed
 
 
-def loop_links(session, log, discovered_links: dict):
+def loop_links(session: HTMLSession, log: MarkDownFile | None, discovered_links: dict):
     """
     Loop over the links and add news when discovered in the analyzed page.
     :param session: HTMLSession to make requests
@@ -31,25 +30,55 @@ def loop_links(session, log, discovered_links: dict):
 
 
 def analyze_page(page: object, log: MarkDownFile | None, url: str, discovered_links: dict):
+    """
+    Analyze the content of the webpage and log the results
+    :param page: Page to analyze
+    :param log: Log file to write report
+    :param url: Url of the webpage
+    :param discovered_links: Dict containing the links to visit
+    :return: None
+    """
     # Log the page url
     log.append_end(f"## {url}\n")
 
     metadata(page, log)
     get_links(page, log, discovered_links)
+    forms_inputs(page, log)
 
 
-def forms_inputs(session: HTMLSession, log: MarkDownFile | None):
-    return
+def forms_inputs(page: object, log: MarkDownFile | None):
+    """
+    Log any form/input retrieved in the page with relative information
+    :param page: Page to analyze
+    :param log: Log file to write report
+    :return: None
+    """
+    log.append_end("### Forms and Inputs\n")
+
+    forms = page.find("form")
+    inputs = page.find("input")
+
+    log.append_end("### Forms \n")
+    # Log all the metadata
+    for form in forms:
+        log.append_end(f"- `{form}`\n")
+
+    log.append_end("### Inputs \n")
+    # Log all the metadata
+    for input in inputs:
+        log.append_end(f"- `{input}`\n")
 
 
 def metadata(page: object, log: MarkDownFile | None):
-    # Get the page (wait for javascript is not required)
-    soup = BeautifulSoup(page.text, "html.parser")
-
+    """
+    Get metadata of page and write to log
+    :param page: Page to analyze
+    :param log: Log file to write report
+    :return: None
+    """
     log.append_end("### Metadata\n")
 
-    # Find all the metadata of the page
-    meta = soup.find_all("meta")
+    meta = page.find("meta")
 
     # Log all the metadata
     for m in meta:
@@ -62,6 +91,10 @@ def files(session: HTMLSession, log: MarkDownFile | None, url: str):
         - sitemap.xml
         - robots.txt
     and print the result
+    :param session: HTMLSession to use requests_html
+    :param log: Log file to write report
+    :param url: Url of the webpage
+    :return:
     """
     sitemap_req = session.get(f"{url}/sitemap.xml")
     robots_req = session.get(f"{url}/robots.txt")

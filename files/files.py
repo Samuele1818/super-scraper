@@ -5,6 +5,10 @@ from mdutils.mdutils import MdUtils
 
 
 def create_log():
+    """
+    Create the log file and the "logs" if not exists
+    :return: Log file
+    """
     try:
         # Create log folder if not exists
         if not os.path.exists("./logs/"):
