@@ -18,7 +18,7 @@ def normalize_link(homepage_url: str, link: str):
     return homepage_url + link
 
 
-def is_links_not_analyzed(discovered_links: dict):
+def are_links_not_analyzed(discovered_links: dict):
     """
     Check if there are links not analyzed in the dict (value = N)
     :param discovered_links: Dict with links

@@ -10,10 +10,14 @@ def get_page(session: HTMLSession, url: str):
     Support javascript rendering
     :param session: HTMLSession to use requests_html
     :param url: Url of the webpage
-    :return: The html of the page rendered (Javascript included)
+    :return: The html of the page rendered (Javascript included) / None if errors
     """
     # Get the page
     r = session.get(url)
+
+    # If page not found / errors occurred return None
+    if r.status_code != 200:
+        return None
 
     # Wait page loading to get Javascript loaded elements
     r.html.render(timeout=50000)
@@ -43,6 +47,5 @@ def get_links(webpage: object, log: MarkDownFile | None, discovered_links: dict)
 
                 # Log all links found in the page
                 log.append_end(f"- {link} \n")
-
     # Return a list with all the links contained in the webpage
     return links

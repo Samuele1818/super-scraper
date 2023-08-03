@@ -2,7 +2,7 @@ from mdutils.fileutils import MarkDownFile
 from requests_html import HTMLSession
 
 from scrapers.spider import get_links, get_page
-from utils.utils import is_links_not_analyzed
+from utils.utils import are_links_not_analyzed
 
 
 def loop_links(session: HTMLSession, log: MarkDownFile | None, discovered_links: dict):
@@ -13,19 +13,21 @@ def loop_links(session: HTMLSession, log: MarkDownFile | None, discovered_links:
     :param discovered_links: Dict with the links and their states (N(ot analyzed) or A(nalyzed))
     :return: None
     """
-    # FIXME: Replace with URL passed by arguments if too slow
+    # TODO: Replace with URL passed by arguments if too slow
     # Loop all discovered pages of the site
     for link in discovered_links.copy():
         # If link already analyzed skip
         if discovered_links[link] == "N":
             # Get the page content
             current_page = get_page(session, link)
+
             # Analyze the page
             analyze_page(current_page, log, link, discovered_links)
 
+            # Mark link as analyzed
             discovered_links[link] = "A"
 
-    if is_links_not_analyzed(discovered_links):
+    if are_links_not_analyzed(discovered_links):
         loop_links(session, log, discovered_links)
 
 
@@ -40,6 +42,11 @@ def analyze_page(page: object, log: MarkDownFile | None, url: str, discovered_li
     """
     # Log the page url
     log.append_end(f"## {url}\n")
+
+    if page is None:
+        # TODO: Add more information about the error
+        log.append_end("Error while getting page. Page could not exits / temporally not reachable\n")
+        return
 
     metadata(page, log)
     get_links(page, log, discovered_links)
