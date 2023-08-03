@@ -1,29 +1,31 @@
-from mdutils.fileutils import MarkDownFile
+from requests_html import HTMLSession
 
 from files.files import create_log
-from scrapers.scrapers import files
-from scrapers.spider import loop_sublinks, get_links
+from scrapers.scrapers import files, loop_links
+from scrapers.spider import get_page
 from validators.validator import is_valid_url
 
 if __name__ == '__main__':
     print("SSCraper...", '\n')
     url = "https://www.a-boutall.com/"
 
+    # Create the session to make requests
+    session = HTMLSession()
+
     # Request URL till the inserted URL is valid and reachable11
-    while not is_valid_url(url):
+    while not is_valid_url(session, url):
         url = input("Insert the URL of the website (home page URL): ")
 
+    # Dict with all the discovered links
+    discovered_links = {url: "N"}
+    # Page passed to function to be analyzed, change on link loop
+    current_page = get_page(session, url)
+
+    print("Start scanning...", '\n')
     # Create the log file
     log = create_log()
 
-    print("Start scanning...", '\n')
-
     # Search for useful files in the website
-    files(url, log)
+    files(session, log, url)
 
-    loop_sublinks(url)
-
-
-
-
-
+    loop_links(session, log, discovered_links)

@@ -7,10 +7,10 @@ This software will work in a very simple way, you insert the URL of the website,
 will automatically extract all the date of the website and store this data in a log file that is
 structured in a way explained below.
 
-
 ## Data
 
 The date that this software will extract are:
+
 - Metadata
 - Technologies used
 - Contacts
@@ -42,33 +42,49 @@ Logs are stored in `md` files cause this format allows to create easy to read do
 ### Structure
 
 #### Files
+
 This section will include all the sensitive files that can be founded on a website such as sitemap.xml
 and robots.txt.
 
 #### Pages
-Each page founded in the website will be analyzed an the information will be reported in the log file
+
+Each page founded in the website will be analyzed and the information will be reported in the log file
 as follows:
 
 ##### Title | Url
 
 ###### Metadata
+
 All the metadata of the current page
 
 ###### Links
+
 List of all the links present on the page
 
 ###### Forms and Inputs
+
 If page includes forms / inputs and information about these forms / inputs
 
 ###### Cookies
+
 The cookies saved when you are on the page
 
 ###### Contacts
-By contacts we mean emails, social link, ecc.
+
+By contacts, we mean emails, social link, ecc.
 All the information that regard the contacts found in the page
 
 ###### Technologies Used
+
 All the technologies that can be detected, e.g. GSAP, ReactJS
 
 ###### General Information
-Name of people (With the relative role if specified)
+
+Names of people (With the relative role if specified)
+
+# TODOs
+
+- [ ] Create `logs` folder automatically
+- [ ] Update `requirements.txt` and remove unused dependencies
+- [ ] Update `README.md` to make it more concise and clear
+- [ ] Add template to create pull requests and add a documentation for contributors
