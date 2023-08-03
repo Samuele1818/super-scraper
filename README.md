@@ -84,7 +84,7 @@ Names of people (With the relative role if specified)
 
 # TODOs
 
-- [ ] Create `logs` folder automatically
-- [ ] Update `requirements.txt` and remove unused dependencies
+- [x] Create `logs` folder automatically
+- [x] Update `requirements.txt` and remove unused dependencies
 - [ ] Update `README.md` to make it more concise and clear
 - [ ] Add template to create pull requests and add a documentation for contributors

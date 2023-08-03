@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 from mdutils.mdutils import MdUtils
@@ -5,6 +6,10 @@ from mdutils.mdutils import MdUtils
 
 def create_log():
     try:
+        # Create log folder if not exists
+        if not os.path.exists("./logs/"):
+            os.makedirs("./logs/")
+
         # Get the current date that will be the name of the log
         dt_string = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
 
