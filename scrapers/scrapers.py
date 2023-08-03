@@ -1,3 +1,5 @@
+import asyncio
+
 from mdutils.fileutils import MarkDownFile
 from requests_html import HTMLSession
 
@@ -51,6 +53,7 @@ def analyze_page(page: object, log: MarkDownFile | None, url: str, discovered_li
     metadata(page, log)
     get_links(page, log, discovered_links)
     forms_inputs(page, log)
+    cookies(page, log)
 
 
 def forms_inputs(page: object, log: MarkDownFile | None):
@@ -65,15 +68,24 @@ def forms_inputs(page: object, log: MarkDownFile | None):
     forms = page.find("form")
     inputs = page.find("input")
 
-    log.append_end("### Forms \n")
+    log.append_end("#### Forms \n")
     # Log all the metadata
     for form in forms:
         log.append_end(f"- `{form}`\n")
 
-    log.append_end("### Inputs \n")
+    log.append_end("#### Inputs \n")
     # Log all the metadata
     for input in inputs:
         log.append_end(f"- `{input}`\n")
+
+
+def cookies(page: object, log: MarkDownFile | None):
+    log.append_end("### Cookies\n")
+    asyn = asyncio.get_event_loop()
+    page_cookies = asyn.run_until_complete(page.page.cookies())
+
+    for cookie in page_cookies:
+        log.append_end(f"- `{cookie}`\n")
 
 
 def metadata(page: object, log: MarkDownFile | None):

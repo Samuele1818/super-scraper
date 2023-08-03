@@ -20,7 +20,7 @@ def get_page(session: HTMLSession, url: str):
         return None
 
     # Wait page loading to get Javascript loaded elements
-    r.html.render(timeout=50000)
+    r.html.render(timeout=50000, keep_page=True)
     return r.html
 
 
