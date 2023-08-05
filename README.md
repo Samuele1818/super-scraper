@@ -44,6 +44,15 @@ Logs are stored in `md` files cause this format allows to create easy to read do
 This section will include all the sensitive files that can be founded on a website such as sitemap.xml
 and robots.txt.
 
+#### Target Information
+
+All the technologies that can be detected, for example, GSAP, ReactJS
+
+#### Technologies Used
+
+All the technologies that can be detected, for example, GSAP, ReactJS
+
+
 #### Pages
 
 Each page found on the website will be analyzed then the information will be reported in the log file
@@ -71,10 +80,6 @@ The cookies that are saved when you are on the page
 
 By contacts, we mean emails, social links, etc.
 All the information that regard the contacts that are found on the page
-
-###### Technologies Used
-
-All the technologies that can be detected, for example, GSAP, ReactJS
 
 ###### General Information
 

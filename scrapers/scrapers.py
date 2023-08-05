@@ -1,4 +1,6 @@
 import asyncio
+import json
+import re
 
 from mdutils.fileutils import MarkDownFile
 from requests_html import HTMLSession
@@ -54,6 +56,7 @@ def analyze_page(page: object, log: MarkDownFile | None, url: str, discovered_li
     get_links(page, log, discovered_links)
     forms_inputs(page, log)
     cookies(page, log)
+    contacts(page, log)
 
 
 def forms_inputs(page: object, log: MarkDownFile | None):
@@ -79,6 +82,37 @@ def forms_inputs(page: object, log: MarkDownFile | None):
         log.append_end(f"- `{input}`\n")
 
 
+def contacts(page: object, log: MarkDownFile | None):
+    """
+    Find contacts from the page, such as socials and emails
+    :param page: Page to analyze
+    :param log: Log file to write report
+    :return: None
+    """
+    # TODO improve the function
+    splitted_page = page.text.split(" ")
+
+    log.append_end("### Contacts\n")
+
+    log.append_end("#### Emails\n")
+
+    # Check if text in the page represents an email
+    for email in splitted_page:
+        if email.find("@") != -1 and re.search(email, "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"):
+            log.append_end(f"- {email}\n")
+
+    # Load the file with the list of socials name as a JSON
+    with open('./lists/social.json') as social_file:
+        social_list = json.load(social_file)
+
+        log.append_end("#### Socials\n")
+
+        # Check if text in the page represents a social
+        for social in splitted_page:
+            if social in social_list:
+                log.append_end(f"- {social}\n")
+
+
 def cookies(page: object, log: MarkDownFile | None):
     log.append_end("### Cookies\n")
     asyn = asyncio.get_event_loop()
@@ -86,6 +120,22 @@ def cookies(page: object, log: MarkDownFile | None):
 
     for cookie in page_cookies:
         log.append_end(f"- `{cookie}`\n")
+
+
+def metadata(page: object, log: MarkDownFile | None):
+    """
+    Get metadata of page and write to log
+    :param page: Page to analyze
+    :param log: Log file to write report
+    :return: None
+    """
+    log.append_end("### Metadata\n")
+
+    meta = page.find("meta")
+
+    # Log all the metadata
+    for m in meta:
+        log.append_end(f"- `{m}`\n")
 
 
 def metadata(page: object, log: MarkDownFile | None):
