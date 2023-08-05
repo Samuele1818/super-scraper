@@ -13,7 +13,7 @@
 - Ensure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable.
 
 ## Did you fix whitespace, format code, or make a purely cosmetic patch?
-We do not accept these types of changes generally cause for these functions we rely on Prettier.
+We do not accept these types of changes generally cause for these functions we rely on [yapf](https://github.com/google/yapf).
 
 ## Do you intend to add a new feature or change an existing one?
 - Open an Issue to describe what you want to add/change
