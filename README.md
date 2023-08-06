@@ -46,12 +46,21 @@ and robots.txt.
 
 #### Target Information
 
-All the technologies that can be detected, for example, GSAP, ReactJS
+#### Whois
+
+A whois of the site
+
+#### Ip
+
+Ip address
+
+#### Operating System
+
+OS and other information about the target
 
 #### Technologies Used
 
 All the technologies that can be detected, for example, GSAP, ReactJS
-
 
 #### Pages
 

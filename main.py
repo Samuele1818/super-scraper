@@ -1,7 +1,7 @@
 from requests_html import HTMLSession
 
 from files.files import create_log
-from scrapers.scrapers import files, loop_links, cookies
+from scrapers.scrapers import files, loop_links, whois_check, technologies
 from scrapers.spider import get_page
 from validators.validator import is_valid_url
 
@@ -29,7 +29,9 @@ if __name__ == '__main__':
     # Create the log file
     log = create_log()
 
-    # Search for useful files in the website
-    files(session, log, url)
+    # Search for useful files and make a whois
+    files(session, url, log)
+    whois_check(url, log)
+    technologies(url, log)
     # Loop website pages and analyze them, log results
     loop_links(session, log, discovered_links)

@@ -2,6 +2,9 @@ import asyncio
 import json
 import re
 
+import builtwith
+import whois
+
 from mdutils.fileutils import MarkDownFile
 from requests_html import HTMLSession
 
@@ -19,6 +22,7 @@ def loop_links(session: HTMLSession, log: MarkDownFile | None, discovered_links:
     """
     # TODO: Replace with URL passed by arguments if too slow
     # Loop all discovered pages of the site
+    log.append_end("# Pages\n")
     for link in discovered_links.copy():
         # If link already analyzed skip
         if discovered_links[link] == "N":
@@ -138,23 +142,33 @@ def metadata(page: object, log: MarkDownFile | None):
         log.append_end(f"- `{m}`\n")
 
 
-def metadata(page: object, log: MarkDownFile | None):
+def whois_check(url: str, log: MarkDownFile | None):
     """
-    Get metadata of page and write to log
-    :param page: Page to analyze
+    Log the whois checkup of the site
     :param log: Log file to write report
+    :param url: Url of the webpage
     :return: None
     """
-    log.append_end("### Metadata\n")
-
-    meta = page.find("meta")
-
-    # Log all the metadata
-    for m in meta:
-        log.append_end(f"- `{m}`\n")
+    log.append_end("# Target Information\n")
+    log.append_end("## Whois\n")
+    whois_report = whois.whois(url)
+    log.append_end(str(whois_report) + "\n\n")
 
 
-def files(session: HTMLSession, log: MarkDownFile | None, url: str):
+def technologies(url: str, log: MarkDownFile | None):
+    """
+    Log the technologies checkup of the site
+    :param log: Log file to write report
+    :param url: Url of the webpage
+    :return: None
+    """
+    log.append_end("## Technologies\n")
+    build_with_report = builtwith.parse(url)
+    print(build_with_report)
+    log.append_end(str(build_with_report) + "\n\n")
+
+
+def files(session: HTMLSession, url: str, log: MarkDownFile | None):
     """
     Find all the useful files of the website:
         - sitemap.xml
