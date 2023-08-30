@@ -1,809 +1,269 @@
-[
-  {
-    "Name": "23snaps"
-  },
-  {
-    "Name": "4chan"
-  },
-  {
-    "Name": "8tracks.com"
-  },
-  {
-    "Name": "Academia.edu"
-  },
-  {
-    "Name": "About.me"
-  },
-  {
-    "Name": "alimero"
-  },
-  {
-    "Name": "Amikumu"
-  },
-  {
-    "Name": "aNobii"
-  },
-  {
-    "Name": "Anphabe.com"
-  },
-  {
-    "Name": "Ask.fm"
-  },
-  {
-    "Name": "aSmallWorld"
-  },
-  {
-    "Name": "Athlinks"
-  },
-  {
-    "Name": "Band"
-  },
-  {
-    "Name": "beBee"
-  },
-  {
-    "Name": "Biip.no"
-  },
-  {
-    "Name": "BitClout"
-  },
-  {
-    "Name": "BlackPlanet"
-  },
-  {
-    "Name": "Blind"
-  },
-  {
-    "Name": "Blogger"
-  },
-  {
-    "Name": "Brainly"
-  },
-  {
-    "Name": "Busuu"
-  },
-  {
-    "Name": "Buzznet"
-  },
-  {
-    "Name": "CafeMom"
-  },
-  {
-    "Name": "Care2"
-  },
-  {
-    "Name": "CaringBridge"
-  },
-  {
-    "Name": "Cellufun"
-  },
-  {
-    "Name": "Chess.com"
-  },
-  {
-    "Name": "Chictopia"
-  },
-  {
-    "Name": "Classmates.com"
-  },
-  {
-    "Name": "Cloob"
-  },
-  {
-    "Name": "CouchSurfing"
-  },
-  {
-    "Name": "CozyCot"
-  },
-  {
-    "Name": "CrossFit"
-  },
-  {
-    "Name": "Crunchyroll"
-  },
-  {
-    "Name": "Cucumbertown"
-  },
-  {
-    "Name": "Cyworld"
-  },
-  {
-    "Name": "DailyStrength"
-  },
-  {
-    "Name": "Dayviews"
-  },
-  {
-    "Name": "Dead Runners Society"
-  },
-  {
-    "Name": "DeviantArt"
-  },
-  {
-    "Name": "Diaspora*"
-  },
-  {
-    "Name": "Discord"
-  },
-  {
-    "Name": "Draugiem.lv"
-  },
-  {
-    "Name": "douban"
-  },
-  {
-    "Name": "Doximity"
-  },
-  {
-    "Name": "Dreamwidth"
-  },
-  {
-    "Name": "Dulwich OnView"
-  },
-  {
-    "Name": "Duolingo"
-  },
-  {
-    "Name": "DXY.cn"
-  },
-  {
-    "Name": "Ello"
-  },
-  {
-    "Name": "Elixio"
-  },
-  {
-    "Name": "Englis"
-  },
-  {
-    "Name": "eToro"
-  },
-  {
-    "Name": "EverQuest"
-  },
-  {
-    "Name": "Experts Exchange"
-  },
-  {
-    "Name": "Facebook"
-  },
-  {
-    "Name": "Faces"
-  },
-  {
-    "Name": "Fark"
-  },
-  {
-    "Name": "Fieldoo"
-  },
-  {
-    "Name": "Fetlife"
-  },
-  {
-    "Name": "FictionCity"
-  },
-  {
-    "Name": "Fillos de Galicia"
-  },
-  {
-    "Name": "FilmAffinity"
-  },
-  {
-    "Name": "Filmow"
-  },
-  {
-    "Name": "Final Fantasy XI"
-  },
-  {
-    "Name": "Fishbrain"
-  },
-  {
-    "Name": "Fitocracy"
-  },
-  {
-    "Name": "Flickchart"
-  },
-  {
-    "Name": "Flixster"
-  },
-  {
-    "Name": "Flickr"
-  },
-  {
-    "Name": "Frank"
-  },
-  {
-    "Name": "Focus.com"
-  },
-  {
-    "Name": "Fotki"
-  },
-  {
-    "Name": "Foursquare City Guide"
-  },
-  {
-    "Name": "Foursquare Swarm"
-  },
-  {
-    "Name": "Friendica"
-  },
-  {
-    "Name": "Fyuse"
-  },
-  {
-    "Name": "Gab"
-  },
-  {
-    "Name": "Gaia Online"
-  },
-  {
-    "Name": "Gapo"
-  },
-  {
-    "Name": "GameFAQs"
-  },
-  {
-    "Name": "GameTZ.com"
-  },
-  {
-    "Name": "Gapyear.com"
-  },
-  {
-    "Name": "Gays.com"
-  },
-  {
-    "Name": "Gaysir"
-  },
-  {
-    "Name": "GemStone IV"
-  },
-  {
-    "Name": "Geni.com"
-  },
-  {
-    "Name": "Gentlemint"
-  },
-  {
-    "Name": "Gettr"
-  },
-  {
-    "Name": "GitHub"
-  },
-  {
-    "Name": "Glee.com"
-  },
-  {
-    "Name": "Goodreads"
-  },
-  {
-    "Name": "GovLoop"
-  },
-  {
-    "Name": "Grindr"
-  },
-  {
-    "Name": "Habbo"
-  },
-  {
-    "Name": "Habitat"
-  },
-  {
-    "Name": "Hello"
-  },
-  {
-    "Name": "hi5"
-  },
-  {
-    "Name": "Hospitality Club"
-  },
-  {
-    "Name": "Houseparty"
-  },
-  {
-    "Name": "HR.com"
-  },
-  {
-    "Name": "Hub Culture"
-  },
-  {
-    "Name": "I Had Cancer"
-  },
-  {
-    "Name": "Ibibo"
-  },
-  {
-    "Name": "ICQ"
-  },
-  {
-    "Name": "Identi.ca"
-  },
-  {
-    "Name": "ifMUD"
-  },
-  {
-    "Name": "IMVU"
-  },
-  {
-    "Name": "iNaturalist"
-  },
-  {
-    "Name": "İnci Sözlük"
-  },
-  {
-    "Name": "Indaba Music"
-  },
-  {
-    "Name": "Influenster"
-  },
-  {
-    "Name": "Inspire"
-  },
-  {
-    "Name": "Instagram"
-  },
-  {
-    "Name": "IRC-Galleria"
-  },
-  {
-    "Name": "italki"
-  },
-  {
-    "Name": "JamiiForums"
-  },
-  {
-    "Name": "Kaixin001"
-  },
-  {
-    "Name": "KakaoStory"
-  },
-  {
-    "Name": "Kiwibox"
-  },
-  {
-    "Name": "KizlarSoruyor"
-  },
-  {
-    "Name": "Kobo"
-  },
-  {
-    "Name": "Koo"
-  },
-  {
-    "Name": "Koofers"
-  },
-  {
-    "Name": "Kroogi"
-  },
-  {
-    "Name": "Labroots"
-  },
-  {
-    "Name": "LambdaMOO"
-  },
-  {
-    "Name": "Last.fm"
-  },
-  {
-    "Name": "Letterboxd"
-  },
-  {
-    "Name": "LibraryThing"
-  },
-  {
-    "Name": "Likee"
-  },
-  {
-    "Name": "LimeWire"
-  },
-  {
-    "Name": "LinguaLeo"
-  },
-  {
-    "Name": "LinkedIn"
-  },
-  {
-    "Name": "Listography"
-  },
-  {
-    "Name": "LiveJournal"
-  },
-  {
-    "Name": "Lunchclub"
-  },
-  {
-    "Name": "Marco Polo"
-  },
-  {
-    "Name": "Mastodon"
-  },
-  {
-    "Name": "MEETin"
-  },
-  {
-    "Name": "Meetup"
-  },
-  {
-    "Name": "MeWe"
-  },
-  {
-    "Name": "Miaopai"
-  },
-  {
-    "Name": "Micro.blog"
-  },
-  {
-    "Name": "MocoSpace"
-  },
-  {
-    "Name": "Minds"
-  },
-  {
-    "Name": "Fitocracy"
-  },
-  {
-    "Name": "mixi"
-  },
-  {
-    "Name": "MocoSpace"
-  },
-  {
-    "Name": "Moodle"
-  },
-  {
-    "Name": "MouthShut.com"
-  },
-  {
-    "Name": "Mubi"
-  },
-  {
-    "Name": "MyHeritage"
-  },
-  {
-    "Name": "MyLife"
-  },
-  {
-    "Name": "Myspace"
-  },
-  {
-    "Name": "My World@Mail.Ru"
-  },
-  {
-    "Name": "Nearby"
-  },
-  {
-    "Name": "Neopets"
-  },
-  {
-    "Name": "Newgrounds"
-  },
-  {
-    "Name": "NK.pl"
-  },
-  {
-    "Name": "Nexopia"
-  },
-  {
-    "Name": "Nextdoor"
-  },
-  {
-    "Name": "Ning"
-  },
-  {
-    "Name": "Odnoklassniki"
-  },
-  {
-    "Name": "Open Diary"
-  },
-  {
-    "Name": "Parler"
-  },
-  {
-    "Name": "PatientsLikeMe"
-  },
-  {
-    "Name": "Partyflock"
-  },
-  {
-    "Name": "Peach"
-  },
-  {
-    "Name": "PEERtrainer"
-  },
-  {
-    "Name": "Periscope"
-  },
-  {
-    "Name": "Pink Petro"
-  },
-  {
-    "Name": "Pinterest"
-  },
-  {
-    "Name": "Pixnet"
-  },
-  {
-    "Name": "Play.fm"
-  },
-  {
-    "Name": "Plaxo"
-  },
-  {
-    "Name": "Playlist.com"
-  },
-  {
-    "Name": "Plurk"
-  },
-  {
-    "Name": "Poa.st or Poast"
-  },
-  {
-    "Name": "Portfolium"
-  },
-  {
-    "Name": "Postcrossing"
-  },
-  {
-    "Name": "Quora"
-  },
-  {
-    "Name": "Qzone"
-  },
-  {
-    "Name": "RallyPoint"
-  },
-  {
-    "Name": "RateItAll"
-  },
-  {
-    "Name": "Ravelry"
-  },
-  {
-    "Name": "Readgeek"
-  },
-  {
-    "Name": "Red Light Center"
-  },
-  {
-    "Name": "Reddit"
-  },
-  {
-    "Name": "Renren"
-  },
-  {
-    "Name": "ResearchGate"
-  },
-  {
-    "Name": "ReverbNation.com"
-  },
-  {
-    "Name": "Rooster Teeth"
-  },
-  {
-    "Name": "RuneScape"
-  },
-  {
-    "Name": "Ryze"
-  },
-  {
-    "Name": "Sarahah"
-  },
-  {
-    "Name": "Second Life"
-  },
-  {
-    "Name": "Sharesome"
-  },
-  {
-    "Name": "Sina Weibo"
-  },
-  {
-    "Name": "Skoob"
-  },
-  {
-    "Name": "Skyrock"
-  },
-  {
-    "Name": "Snapchat"
-  },
-  {
-    "Name": "Snow"
-  },
-  {
-    "Name": "Solaborate"
-  },
-  {
-    "Name": "Something Awful"
-  },
-  {
-    "Name": "SoundCloud"
-  },
-  {
-    "Name": "Soup.io"
-  },
-  {
-    "Name": "Spacehey"
-  },
-  {
-    "Name": "Spaces"
-  },
-  {
-    "Name": "Spot.IM"
-  },
-  {
-    "Name": "Spoutible"
-  },
-  {
-    "Name": "Stack Overflow"
-  },
-  {
-    "Name": "Stage 32"
-  },
-  {
-    "Name": "Steam"
-  },
-  {
-    "Name": "Steemit"
-  },
-  {
-    "Name": "StudiVZ"
-  },
-  {
-    "Name": "Tagged"
-  },
-  {
-    "Name": "TakingITGlobal"
-  },
-  {
-    "Name": "Tal Canal"
-  },
-  {
-    "Name": "Talenthouse"
-  },
-  {
-    "Name": "Taringa!"
-  },
-  {
-    "Name": "TermWiki"
-  },
-  {
-    "Name": "The Sphere"
-  },
-  {
-    "Name": "The Meta Network"
-  },
-  {
-    "Name": "The Student Room"
-  },
-  {
-    "Name": "The WELL"
-  },
-  {
-    "Name": "Thinkspot"
-  },
-  {
-    "Name": "Threads"
-  },
-  {
-    "Name": "TikTok"
-  },
-  {
-    "Name": "Total Recut"
-  },
-  {
-    "Name": "Travellerspoint"
-  },
-  {
-    "Name": "Truth Social"
-  },
-  {
-    "Name": "Tuenti"
-  },
-  {
-    "Name": "Tumblr"
-  },
-  {
-    "Name": "TV Tropes"
-  },
-  {
-    "Name": "Twitter"
-  },
-  {
-    "Name": "Twoo.com"
-  },
-  {
-    "Name": "TV Time"
-  },
-  {
-    "Name": "Untappd"
-  },
-  {
-    "Name": "User Friendly"
-  },
-  {
-    "Name": "Vero"
-  },
-  {
-    "Name": "VK"
-  },
-  {
-    "Name": "Vampirefreaks.com"
-  },
-  {
-    "Name": "Viadeo"
-  },
-  {
-    "Name": "Vingle"
-  },
-  {
-    "Name": "Virb"
-  },
-  {
-    "Name": "Voat"
-  },
-  {
-    "Name": "Wattpad"
-  },
-  {
-    "Name": "Warm Showers"
-  },
-  {
-    "Name": "WAYN"
-  },
-  {
-    "Name": "We Heart It"
-  },
-  {
-    "Name": "Werkenntwen"
-  },
-  {
-    "Name": "Whisper"
-  },
-  {
-    "Name": "Wikipedia"
-  },
-  {
-    "Name": "WikiWikiWeb"
-  },
-  {
-    "Name": "Wooxie"
-  },
-  {
-    "Name": "Woozworld"
-  },
-  {
-    "Name": "WordPress"
-  },
-  {
-    "Name": "World of Warcraft"
-  },
-  {
-    "Name": "WriteAPrisoner.com"
-  },
-  {
-    "Name": "WT Social"
-  },
-  {
-    "Name": "Wykop.pl"
-  },
-  {
-    "Name": "Xanga"
-  },
-  {
-    "Name": "XING"
-  },
-  {
-    "Name": "Yammer"
-  },
-  {
-    "Name": "Yelp"
-  },
-  {
-    "Name": "Yo"
-  },
-  {
-    "Name": "YTMND"
-  },
-  {
-    "Name": "zoo.gr"
-  }
-]
+{
+  "23snaps": "https://www.23snaps.com",
+  "4chan": "https://www.4chan.org",
+  "8tracks.com": "https://www.8tracks.com",
+  "Academia.edu": "https://www.academia.edu",
+  "About.me": "https://about.me",
+  "alimero": "https://alimero.ru/",
+  "Amikumu": "https://amikumu.com/",
+  "aNobii": "https://www.anobii.com",
+  "Anphabe.com": "https://www.anphabe.com/",
+  "Ask.fm": "https://ask.fm/",
+  "aSmallWorld": "https://www.asmallworld.com/",
+  "Athlinks": "https://blog.athlinks.com/",
+  "Band": "https://band.us",
+  "beBee": "https://it.bebee.com/",
+  "Biip.no": "https://biip.no/",
+  "BitClout": "https://bitclout.com/",
+  "BlackPlanet": "https://www.blackplanet.com",
+  "Blind": "https://www.blind.com",
+  "Blogger": "https://www.blogger.com",
+  "Brainly": "https://www.brainly.com",
+  "Busuu": "https://www.busuu.com",
+  "Buzznet": "https://www.buzznet.com",
+  "CafeMom": "https://www.cafemom.com",
+  "Care2": "https://www.care2.com",
+  "CaringBridge": "https://www.caringbridge.org",
+  "Cellufun": "https://www.cellufun.com",
+  "Chess.com": "https://www.chess.com",
+  "Chictopia": "https://www.chictopia.com",
+  "Classmates.com": "https://www.classmates.com",
+  "Cloob": "https://www.cloob.com",
+  "CouchSurfing": "https://www.couchsurfing.com",
+  "CozyCot": "https://www.cozycot.com",
+  "CrossFit": "https://www.crossfit.com",
+  "Crunchyroll": "https://www.crunchyroll.com",
+  "Cucumbertown": "https://www.cucumbertown.com",
+  "Cyworld": "https://www.cyworld.com",
+  "DailyStrength": "https://www.dailystrength.org",
+  "Dayviews": "https://www.dayviews.com",
+  "Dead Runners Society": "https://www.deadrunnerssociety.com",
+  "DeviantArt": "https://www.deviantart.com",
+  "Diaspora*": "https://www.diasporafoundation.org",
+  "Discord": "https://www.discord.com",
+  "Draugiem.lv": "https://www.draugiem.lv",
+  "douban": "https://www.douban.com",
+  "Doximity": "https://www.doximity.com",
+  "Dreamwidth": "https://www.dreamwidth.org",
+  "Dulwich OnView": "https://www.dulwichonview.org.uk",
+  "Duolingo": "https://www.duolingo.com",
+  "DXY.cn": "https://www.dxy.cn",
+  "Ello": "https://www.ello.co",
+  "Elixio": "https://www.elixio.com",
+  "Englis": "https://www.englis.com",
+  "eToro": "https://www.etoro.com",
+  "EverQuest": "https://www.everquest.com",
+  "Experts Exchange": "https://www.experts-exchange.com",
+  "Facebook": "https://www.facebook.com",
+  "Faces": "https://www.faces.com",
+  "Fark": "https://www.fark.com",
+  "Fieldoo": "https://www.fieldoo.com",
+  "Fetlife": "https://www.fetlife.com",
+  "FictionCity": "https://www.fictioncity.com",
+  "Fillos de Galicia": "https://www.fillosdegalicia.com",
+  "FilmAffinity": "https://www.filmaffinity.com",
+  "Filmow": "https://www.filmow.com",
+  "Final Fantasy XI": "https://www.finalfantasyxi.com",
+  "Fishbrain": "https://www.fishbrain.com",
+  "Fitocracy": "https://www.fitocracy.com",
+  "Flickchart": "https://www.flickchart.com",
+  "Flixster": "https://www.flixster.com",
+  "Flickr": "https://www.flickr.com",
+  "Frank": "https://www.frank.com",
+  "Focus.com": "https://www.focus.com",
+  "Fotki": "https://www.fotki.com",
+  "Foursquare City Guide": "https://www.foursquare.com",
+  "Foursquare Swarm": "https://www.swarmapp.com",
+  "Friendica": "https://www.friendica.com",
+  "Fyuse": "https://www.fyuse.com",
+  "Gab": "https://www.gab.com",
+  "Gaia Online": "https://www.gaiaonline.com",
+  "Gapo": "https://www.gapo.com",
+  "GameFAQs": "https://www.gamefaqs.com",
+  "GameTZ.com": "https://www.gametz.com",
+  "Gapyear.com": "https://www.gapyear.com",
+  "Gays.com": "https://www.gays.com",
+  "Gaysir": "https://www.gaysir.com",
+  "GemStone IV": "https://www.gemstoneiv.com",
+  "Geni.com": "https://www.geni.com",
+  "Gentlemint": "https://www.gentlemint.com",
+  "Gettr": "https://www.gettr.com",
+  "GitHub": "https://www.github.com",
+  "Glee.com": "https://www.glee.com",
+  "Goodreads": "https://www.goodreads.com",
+  "GovLoop": "https://www.govloop.com",
+  "Grindr": "https://www.grindr.com",
+  "Habbo": "https://www.habbo.com",
+  "Habitat": "https://www.habitat.com",
+  "Hello": "https://www.hello.com",
+  "hi5": "https://www.hi5.com",
+  "Hospitality Club": "https://www.hospitalityclub.com",
+  "Houseparty": "https://www.houseparty.com",
+  "HR.com": "https://www.hr.com",
+  "Hub Culture": "https://www.hubculture.com",
+  "I Had Cancer": "https://www.ihadcancer.com",
+  "Ibibo": "https://www.ibibo.com",
+  "ICQ": "https://www.icq.com",
+  "Identi.ca": "https://www.identi.ca",
+  "ifMUD": "https://www.ifmud.com",
+  "IMVU": "https://www.imvu.com",
+  "iNaturalist": "https://www.inaturalist.org",
+  "İnci Sözlük": "https://www.incisozluk.com",
+  "Indaba Music": "https://www.indabamusic.com",
+  "Influenster": "https://www.influenster.com",
+  "Inspire": "https://www.inspire.com",
+  "Instagram": "https://www.instagram.com",
+  "IRC-Galleria": "https://www.irc-galleria.net",
+  "italki": "https://www.italki.com",
+  "JamiiForums": "https://www.jamiiforums.com",
+  "Kaixin001": "https://www.kaixin001.com",
+  "KakaoStory": "https://www.kakaostory.com",
+  "Kiwibox": "https://www.kiwibox.com",
+  "KizlarSoruyor": "https://www.kizlarsoruyor.com",
+  "Kobo": "https://www.kobo.com",
+  "Koo": "https://www.koo.com",
+  "Koofers": "https://www.koofers.com",
+  "Kroogi": "https://www.kroogi.com",
+  "Labroots": "https://www.labroots.com",
+  "LambdaMOO": "https://www.lambdamoo.com",
+  "Last.fm": "https://www.last.fm",
+  "Letterboxd": "https://www.letterboxd.com",
+  "LibraryThing": "https://www.librarything.com",
+  "Likee": "https://www.likee.com",
+  "LimeWire": "https://www.limewire.com",
+  "LinguaLeo": "https://www.lingualeo.com",
+  "LinkedIn": "https://www.linkedin.com",
+  "Listography": "https://www.listography.com",
+  "LiveJournal": "https://www.livejournal.com",
+  "Lunchclub": "https://www.lunchclub.com",
+  "Marco Polo": "https://www.marcopolo.me",
+  "Mastodon": "https://www.mastodon.social",
+  "MEETin": "https://www.meetin.org",
+  "Meetup": "https://www.meetup.com",
+  "MeWe": "https://www.mewe.com",
+  "Miaopai": "https://www.miaopai.com",
+  "Micro.blog": "https://www.micro.blog",
+  "MocoSpace": "https://www.mocospace.com",
+  "Minds": "https://www.minds.com",
+  "mixi": "https://www.mixi.jp",
+  "Moodle": "https://www.moodle.org",
+  "MouthShut.com": "https://www.mouthshut.com",
+  "Mubi": "https://www.mubi.com",
+  "MyHeritage": "https://www.myheritage.com",
+  "MyLife": "https://www.mylife.com",
+  "Myspace": "https://www.myspace.com",
+  "My World@Mail.Ru": "https://my.mail.ru",
+  "Nearby": "https://www.nearby.com",
+  "Neopets": "https://www.neopets.com",
+  "Newgrounds": "https://www.newgrounds.com",
+  "NK.pl": "https://www.nk.pl",
+  "Nexopia": "https://www.nexopia.com",
+  "Nextdoor": "https://www.nextdoor.com",
+  "Ning": "https://www.ning.com",
+  "Odnoklassniki": "https://www.odnoklassniki.ru",
+  "Open Diary": "https://www.opendiary.com",
+  "Parler": "https://www.parler.com",
+  "PatientsLikeMe": "https://www.patientslikeme.com",
+  "Partyflock": "https://www.partyflock.nl",
+  "Peach": "https://www.peach.cool",
+  "PEERtrainer": "https://www.peertrainer.com",
+  "Periscope": "https://www.pscp.tv",
+  "Pink Petro": "https://www.pinkpetro.com",
+  "Pinterest": "https://www.pinterest.com",
+  "Pixnet": "https://www.pixnet.net",
+  "Play.fm": "https://www.play.fm",
+  "Plaxo": "https://www.plaxo.com",
+  "Playlist.com": "https://www.playlist.com",
+  "Plurk": "https://www.plurk.com",
+  "Poa.st or Poast": "https://www.poa.st",
+  "Portfolium": "https://www.portfolium.com",
+  "Postcrossing": "https://www.postcrossing.com",
+  "Quora": "https://www.quora.com",
+  "Qzone": "https://www.qzone.qq.com",
+  "RallyPoint": "https://www.rallypoint.com",
+  "RateItAll": "https://www.rateitall.com",
+  "Ravelry": "https://www.ravelry.com",
+  "Readgeek": "https://www.readgeek.com",
+  "Red Light Center": "https://www.redlightcenter.com",
+  "Reddit": "https://www.reddit.com",
+  "Renren": "https://www.renren.com",
+  "ResearchGate": "https://www.researchgate.net",
+  "ReverbNation.com": "https://www.reverbnation.com",
+  "Rooster Teeth": "https://www.roosterteeth.com",
+  "RuneScape": "https://www.runescape.com",
+  "Ryze": "https://www.ryze.com",
+  "Sarahah": "https://www.sarahah.com",
+  "Second Life": "https://www.secondlife.com",
+  "Sharesome": "https://www.sharesome.com",
+  "Sina Weibo": "https://www.weibo.com",
+  "Skoob": "https://www.skoob.com.br",
+  "Skyrock": "https://www.skyrock.com",
+  "Snapchat": "https://www.snapchat.com",
+  "Snow": "https://www.snow.me",
+  "Solaborate": "https://www.solaborate.com",
+  "Something Awful": "https://www.somethingawful.com",
+  "SoundCloud": "https://www.soundcloud.com",
+  "Soup.io": "https://www.soup.io",
+  "Spacehey": "https://www.spacehey.com",
+  "Spaces": "https://www.spaces.com",
+  "Spot.IM": "https://www.spot.im",
+  "Spoutible": "https://www.spoutible.com",
+  "Stack Overflow": "https://www.stackoverflow.com",
+  "Stage 32": "https://www.stage32.com",
+  "Steam": "https://www.steampowered.com",
+  "Steemit": "https://www.steemit.com",
+  "StudiVZ": "https://www.studivz.net",
+  "Tagged": "https://www.tagged.com",
+  "TakingITGlobal": "https://www.takingitglobal.org",
+  "Tal Canal": "https://www.talcanal.com",
+  "Talenthouse": "https://www.talenthouse.com",
+  "Taringa!": "https://www.taringa.net",
+  "TermWiki": "https://www.termwiki.com",
+  "The Sphere": "https://www.thesphere.com",
+  "The Meta Network": "https://www.themeta.network",
+  "The Student Room": "https://www.thestudentroom.co.uk",
+  "The WELL": "https://www.well.com",
+  "Thinkspot": "https://www.thinkspot.com",
+  "Threads": "https://www.threads.com",
+  "TikTok": "https://www.tiktok.com",
+  "Total Recut": "https://www.totalrecut.com",
+  "Travellerspoint": "https://www.travellerspoint.com",
+  "Truth Social": "https://www.truthsocial.com",
+  "Tuenti": "https://www.tuenti.com",
+  "Tumblr": "https://www.tumblr.com",
+  "TV Tropes": "https://www.tvtropes.org",
+  "Twitter": "https://www.twitter.com",
+  "Twoo.com": "https://www.twoo.com",
+  "TV Time": "https://www.tvtime.com",
+  "Untappd": "https://www.untappd.com",
+  "User Friendly": "https://www.userfriendly.org",
+  "Vero": "https://www.vero.co",
+  "VK": "https://www.vk.com",
+  "Vampirefreaks.com": "https://www.vampirefreaks.com",
+  "Viadeo": "https://www.viadeo.com",
+  "Vingle": "https://www.vingle.net",
+  "Virb": "https://www.virb.com",
+  "Voat": "https://www.voat.co",
+  "Wattpad": "https://www.wattpad.com",
+  "Warm Showers": "https://www.warmshowers.org",
+  "WAYN": "https://www.wayn.com",
+  "We Heart It": "https://www.weheartit.com",
+  "Werkenntwen": "https://www.werkenntwen.de",
+  "Whisper": "https://www.whisper.sh",
+  "Wikipedia": "https://www.wikipedia.org",
+  "WikiWikiWeb": "https://wiki.c2.com",
+  "Wooxie": "https://www.wooxie.com",
+  "Woozworld": "https://www.woozworld.com",
+  "WordPress": "https://www.wordpress.com",
+  "World of Warcraft": "https://www.worldofwarcraft.com",
+  "WriteAPrisoner.com": "https://www.writeaprisoner.com",
+  "WT Social": "https://www.wtsocial.com",
+  "Wykop.pl": "https://www.wykop.pl",
+  "Xanga": "https://www.xanga.com",
+  "XING": "https://www.xing.com",
+  "Yammer": "https://www.yammer.com",
+  "Yelp": "https://www.yelp.com",
+  "Yo": "https://www.justyo.co",
+  "YTMND": "https://www.ytmnd.com",
+  "zoo.gr": "https://www.zoo.gr"
+}
