@@ -1,15 +1,15 @@
 from requests_html import HTMLSession
 
 from files.files import create_log
-from scrapers.scrapers import files, loop_links, whois_check, technologies
+from scrapers.scrapers import files, loop_links, nmap_scan, technologies
 from scrapers.spider import get_page
 from validators.validator import is_valid_url
-
+2
 if __name__ == '__main__':
     print("SSCraper...", '\n')
 
     # Testing URL
-    url = "https://www.a-boutall.com/"
+    url = "https://www.samuelesciatore.com/"
 
     # Create the session to make requests
     session = HTMLSession()
@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
     # Search for useful files and make a whois
     files(session, url, log)
-    whois_check(url, log)
+    nmap_scan(url, log)
     technologies(url, log)
     # Loop website pages and analyze them, log results
     loop_links(session, log, discovered_links)
