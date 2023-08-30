@@ -1,6 +1,7 @@
 import asyncio
 import json
 import re
+import socket
 
 import webtech
 import nmap3
@@ -157,13 +158,20 @@ def nmap_scan(url: str, log: MarkDownFile | None):
     :param url: Url of the webpage
     :return: None
     """
-    nmap = nmap3.Nmap()
+    # Format the URL for gehostbyname
+    url = url.replace("https://", "").replace("/", "")
+
+    ip_address = socket.gethostbyname(url)
     log.append_end("# Target Information\n")
+
+    log.append_end(f"IP: ${ip_address}" + "\n\n")
+
+    nmap = nmap3.Nmap()
     log.append_end("## Nmap Scan\n")
     log.append_end("### Ports\n")
-    log.append_end(str(nmap.scan_top_ports(url)) + "\n\n")
+    log.append_end(str(nmap.scan_top_ports(ip_address)) + "\n\n")
     log.append_end("### OS\n")
-    log.append_end(str(nmap.nmap_os_detection(url)) + "\n\n")
+    log.append_end(str(nmap.nmap_os_detection(ip_address)) + "\n\n")
 
 
 def technologies(url: str, log: MarkDownFile | None):
