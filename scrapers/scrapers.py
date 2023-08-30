@@ -2,8 +2,8 @@ import asyncio
 import json
 import re
 
-import builtwith
-import whois
+import webtech
+import nmap3
 
 from mdutils.fileutils import MarkDownFile
 from requests_html import HTMLSession
@@ -94,27 +94,35 @@ def contacts(page: object, log: MarkDownFile | None):
     :return: None
     """
     # TODO improve the function
-    splitted_page = page.text.split(" ")
+    text = page.text
 
     log.append_end("### Contacts\n")
 
     log.append_end("#### Emails\n")
 
     # Check if text in the page represents an email
-    for email in splitted_page:
-        if email.find("@") != -1 and re.search(email, "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"):
-            log.append_end(f"- {email}\n")
+    emails = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', text)
+    for email in emails:
+        log.append_end(f"- {email}\n")
 
     # Load the file with the list of socials name as a JSON
-    with open('./lists/social.json') as social_file:
-        social_list = json.load(social_file)
+    with open('./lists/social.json', 'r') as social_file:
+        social_networks = json.load(social_file)
+
+        # Create a pattern for matching URLs
+        pattern = '|'.join(re.escape(url) for url in social_networks.values())
+
+        # Find all matches in the text
+        matches = re.findall(pattern, text)
+
+        # Get the social network names from the matches
+        matched_social_networks = [name for name, url in social_networks.items() if url in matches]
 
         log.append_end("#### Socials\n")
 
         # Check if text in the page represents a social
-        for social in splitted_page:
-            if social in social_list:
-                log.append_end(f"- {social}\n")
+        for social in matched_social_networks:
+            log.append_end(f"- {social}\n")
 
 
 def cookies(page: object, log: MarkDownFile | None):
@@ -142,17 +150,20 @@ def metadata(page: object, log: MarkDownFile | None):
         log.append_end(f"- `{m}`\n")
 
 
-def whois_check(url: str, log: MarkDownFile | None):
+def nmap_scan(url: str, log: MarkDownFile | None):
     """
     Log the whois checkup of the site
     :param log: Log file to write report
     :param url: Url of the webpage
     :return: None
     """
+    nmap = nmap3.Nmap()
     log.append_end("# Target Information\n")
-    log.append_end("## Whois\n")
-    whois_report = whois.whois(url)
-    log.append_end(str(whois_report) + "\n\n")
+    log.append_end("## Nmap Scan\n")
+    log.append_end("### Ports\n")
+    log.append_end(str(nmap.scan_top_ports(url)) + "\n\n")
+    log.append_end("### OS\n")
+    log.append_end(str(nmap.nmap_os_detection(url)) + "\n\n")
 
 
 def technologies(url: str, log: MarkDownFile | None):
@@ -163,9 +174,12 @@ def technologies(url: str, log: MarkDownFile | None):
     :return: None
     """
     log.append_end("## Technologies\n")
-    build_with_report = builtwith.parse(url)
-    print(build_with_report)
-    log.append_end(str(build_with_report) + "\n\n")
+    try:
+        wt = webtech.WebTech(options={'json': True})
+        report = wt.start_from_url(url)
+        log.append_end(str(report) + "\n\n")
+    except webtech.utils.ConnectionException:
+        log.append_end("Connection error" + "\n\n")
 
 
 def files(session: HTMLSession, url: str, log: MarkDownFile | None):
