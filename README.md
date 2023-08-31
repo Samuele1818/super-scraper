@@ -26,7 +26,8 @@ usage of the software.
 ## How to use
 
 1. You have to install [Python](https://www.python.org/) on your device if you haven't already.
-2. Download this repository and extract it into a folder
+2. You have to install [Nmap](https://nmap.org/)
+3. Download this repository and extract it into a folder
 3. Use the command ` pip install -r requirements.txt` to install the dependencies needed
 4. Run the `main.py` file running the command `py main.py` in the terminal
 5. You are asked to insert a URL of the website, **insert the URL of the home page**
