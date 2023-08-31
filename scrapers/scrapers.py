@@ -31,6 +31,7 @@ def loop_links(session: HTMLSession, log: MarkDownFile | None, discovered_links:
             current_page = get_page(session, link)
 
             # Analyze the page
+            print(f"Analyzing: {link}")
             analyze_page(current_page, log, link, discovered_links)
 
             # Mark link as analyzed
@@ -164,7 +165,7 @@ def nmap_scan(url: str, log: MarkDownFile | None):
     ip_address = socket.gethostbyname(url)
     log.append_end("# Target Information\n")
 
-    log.append_end(f"IP: ${ip_address}" + "\n\n")
+    log.append_end(f"IP: {ip_address}" + "\n\n")
 
     nmap = nmap3.Nmap()
     log.append_end("## Nmap Scan\n")
