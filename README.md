@@ -99,8 +99,8 @@ Names of people (With the relative role if specified)
 - [x] Create the `logs` folder automatically
 - [x] Update `requirements.txt` and remove unused dependencies
 - [x] Update `README.md` to make it more concise and clear
+- [x] Add template to create pull requests and add documentation for contributors
 - [ ] Create proper error handling
-- [ ] Add template to create pull requests and add documentation for contributors
 - [ ] Implement something like DirBuster
 - [ ] Implement other useful Nmap scans
 - [ ] Improve / add new features to `contacts` function
