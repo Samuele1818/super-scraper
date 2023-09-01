@@ -9,7 +9,7 @@ if __name__ == '__main__':
     print("SSCraper...", '\n')
 
     # Testing URL
-    url = "https://www.samuelesciatore.com/"
+    url = ""
 
     # Create the session to make requests
     session = HTMLSession()
