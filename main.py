@@ -4,9 +4,9 @@ from files.files import create_log
 from scrapers.scrapers import files, loop_links, nmap_scan, technologies
 from scrapers.spider import get_page
 from validators.validator import is_valid_url
-2
+
 if __name__ == '__main__':
-    print("SSCraper...", '\n')
+    print("丂丂⼕尺闩尸🝗尺", '\n')
 
     # Testing URL
     url = ""
