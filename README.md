@@ -1,4 +1,6 @@
 [![CodeQL](https://github.com/Samuele1818/SScraper/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/Samuele1818/SScraper/actions/workflows/github-code-scanning/codeql)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # SScraper
 
 This is software created to learn what sensitive information can
