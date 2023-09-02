@@ -1,3 +1,4 @@
+[![CodeQL](https://github.com/Samuele1818/SScraper/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/Samuele1818/SScraper/actions/workflows/github-code-scanning/codeql)
 # SScraper
 
 This is software created to learn what sensitive information can
