@@ -172,8 +172,9 @@ def nmap_scan(url: str, log: MarkDownFile | None):
     log.append_end(str(nmap.scan_top_ports(ip_address)) + "\n\n")
     log.append_end("### OS\n")
     log.append_end(str(nmap.nmap_os_detection(ip_address)) + "\n\n")
-    log.append_end("### Subnet\n")
-    log.append_end(str(nmap.nmap_subnet_scan(ip_address)) + "\n\n")
+    # log.append_end("### Subnet\n")
+    # log.append_end(str(nmap.nmap_subnet_scan(ip_address)) + "\n\n")
+
 
 def technologies(url: str, log: MarkDownFile | None):
     """
