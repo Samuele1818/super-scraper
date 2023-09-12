@@ -1,8 +1,9 @@
 from requests_html import HTMLSession
 
 from files.files import create_log
-from scrapers.scrapers import files, loop_links, nmap_scan, technologies
-from scrapers.spider import get_page
+from net.scanners.globals import files, nmap_scan, technologies
+from net.scrapers import loop_links
+from net.spider import get_page
 from mvalidators.validator import is_valid_url
 
 if __name__ == '__main__':
@@ -33,5 +34,6 @@ if __name__ == '__main__':
     files(session, url, log)
     nmap_scan(url, log)
     technologies(url, log)
+
     # Loop website pages and analyze them, log results
     loop_links(session, log, discovered_links)
