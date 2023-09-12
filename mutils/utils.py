@@ -9,11 +9,13 @@ def normalize_link(homepage_url: str, link: str):
     if homepage_url == link:
         return homepage_url
 
-    if homepage_url.endswith("/"):
-        homepage_url = homepage_url[:-1]
-
+    # If report to an external site avoid following
     if link.find("http") != -1 and link.find(homepage_url) == -1:
         return None
+
+    # Remove "/" at the end of homepage_url
+    if homepage_url.endswith("/"):
+        homepage_url = homepage_url[:-1]
 
     return homepage_url + link
 
