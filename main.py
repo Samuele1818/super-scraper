@@ -3,7 +3,7 @@ from requests_html import HTMLSession
 from files.files import create_log
 from scrapers.scrapers import files, loop_links, nmap_scan, technologies
 from scrapers.spider import get_page
-from validators.validator import is_valid_url
+from mvalidators.validator import is_valid_url
 
 if __name__ == '__main__':
     print("丂丂⼕尺闩尸🝗尺", '\n')

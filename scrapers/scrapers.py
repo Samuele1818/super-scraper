@@ -10,7 +10,7 @@ from mdutils.fileutils import MarkDownFile
 from requests_html import HTMLSession
 
 from scrapers.spider import get_links, get_page
-from utils.utils import are_links_not_analyzed
+from mutils.utils import are_links_not_analyzed
 
 
 def loop_links(session: HTMLSession, log: MarkDownFile | None, discovered_links: dict):

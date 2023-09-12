@@ -1,7 +1,7 @@
 from mdutils.fileutils import MarkDownFile
 from requests_html import HTMLSession
 
-from utils.utils import normalize_link
+from mutils.utils import normalize_link
 
 
 def get_page(session: HTMLSession, url: str):
